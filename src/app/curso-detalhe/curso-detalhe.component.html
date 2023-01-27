@@ -1,1 +1,14 @@
-<p> Id: {{ id }}</p>
+<mat-card class="container">
+  <mat-card-content>Lista de Cursos:
+    <form class="formulario">
+      <mat-form-field class="cursos">
+        <mat-label>Id: {{ id }}</mat-label>
+        <input matInput placeholder="Entre com um número:" value="">
+      </mat-form-field>
+      <mat-form-field class="cursos">
+        <mat-label>Curso: {{ curso?.nome }}</mat-label>
+        <input matInput value="">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+</mat-card>

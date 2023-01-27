@@ -1,27 +1,35 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="">Rotas</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li routerLinkActive="active">
-          <a class="nav-link active" routerLink="/login">Login</a>
-        </li>
-        <li routerLinkActive="active">
-          <a class="nav-link active"  routerLink="/cursos">Cursos</a>
-        </li>
-        <li routerLinkActive="active">
-          <a class="nav-link active"  [routerLink]="['curso', idCurso.value]">Curso com id</a>
-        </li>
-      </ul>
+<mat-toolbar>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Rotas</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li routerLinkActive="active">
+            <a class="nav-link active" routerLink="/login">Login</a>
+          </li>
+          <li routerLinkActive="active">
+            <a class="nav-link active" routerLink="/cursos">Cursos</a>
+          </li>
+          <li routerLinkActive="active">
+            <a class="nav-link active" [routerLink]="['curso', idCurso.value]">Curso com id</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container">
+  </nav>
+</mat-toolbar>
 
-  <p>Entre com o id do curso</p>
-  <input #idCurso>
+<mat-card class="card">
+  <mat-card-content>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label> Entre com o id do curso </mat-label>
+        <input matInput #idCurso>
+
+      </mat-form-field>
+
+    </form>
+
+  </mat-card-content>
   <router-outlet></router-outlet>
-</div>
-
-
-
+</mat-card>
