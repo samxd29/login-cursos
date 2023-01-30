@@ -18,18 +18,16 @@
     </div>
   </nav>
 </mat-toolbar>
-
-<mat-card class="card">
-  <mat-card-content>
-    <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <mat-label> Entre com o id do curso </mat-label>
-        <input matInput #idCurso>
-
-      </mat-form-field>
-
-    </form>
-
-  </mat-card-content>
-  <router-outlet></router-outlet>
-</mat-card>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-content class="content">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label> Entre com o id do curso </mat-label>
+          <input matInput #idCurso>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card>
+</div>

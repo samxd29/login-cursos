@@ -1,8 +1,12 @@
-<mat-nav-list>
-  <h3>Listas de Cursos</h3>
-  <a mat-list-item *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a>
-
-
-</mat-nav-list>
-<p>Página: {{ pagina }}</p>
-<button mat-raised-button color="primary" (click)="proximaPagina">Próxima Página</button>
+<div class="container">
+  <div class="list">
+    <mat-nav-list class="lista-curso">
+      <h3>Lista de Cursos</h3>
+      <a mat-list-item *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a>
+    </mat-nav-list>
+  </div>
+  <div class="curso">
+    <p>Página: {{ pagina }}</p>
+    <button mat-raised-button color="primary" (click)="proximaPagina">Próxima Página</button>
+  </div>
+</div>

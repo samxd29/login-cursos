@@ -1,17 +1,25 @@
-.card{
-  align-items: center;
+.conteiner{
+  display: inline;
 }
 
+.card{
+  margin-top: 30px;
+}
+
+.content{
+  margin-left: 20rem;
+}
 
 .example-form {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
-
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .example-full-width {
   width: 100%;
   align-content: center;
-
+  margin-bottom: 50px;
 }
