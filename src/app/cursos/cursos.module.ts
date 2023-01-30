@@ -7,9 +7,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule } from '@angular/router';
 
 import { CursosComponent } from './cursos.component';
+import { CursosRoutingModule } from './cursos.routing.module';
 import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 import { CursosService } from './cursos/cursos.service';
@@ -25,7 +25,7 @@ import { CursosService } from './cursos/cursos.service';
     MatListModule,
     MatInputModule,
     MatCardModule,
-    RouterModule
+    CursosRoutingModule
   ],
   exports: [],
   declarations: [
