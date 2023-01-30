@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { CursosModule } from './cursos/cursos.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { AlunosModule } from './cursos/alunos/alunos.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     MatToolbarModule,
     CursosModule,
+    AlunosModule,
     AppRoutingModule,
   ],
   providers: [],
