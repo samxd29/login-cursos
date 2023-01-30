@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursosService } from './cursos/cursos/cursos.service';
 import { HomeComponent } from './home/home.component';
