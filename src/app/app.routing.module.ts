@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
+import { CursoDetalheComponent } from './cursos/cursos/curso-detalhe/curso-detalhe.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
+import { CursoNaoEncontradoComponent } from './cursos/cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 
 
 const appRoutes: Routes = [
