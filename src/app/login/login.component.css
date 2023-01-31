@@ -1,0 +1,15 @@
+mat-card {
+  max-width: 500px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+mat-form-field {
+  display: block;
+}
+
+
+.example-button-row  {
+  margin: 8px 8px 8px 0;
+}
+

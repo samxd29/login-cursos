@@ -1,1 +1,32 @@
-<p>login works!</p>
+<mat-card>
+  <mat-card-content>
+    <h1>Login</h1>
+    <mat-form-field appearance="fill">
+      <mat-label class="active" for="usuario">Usuário</mat-label>
+      <input matInput [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate">
+    </mat-form-field>
+    <div class="example-container">
+      <mat-form-field appearance="fill">
+        <mat-label class="active" for="email">Entre com seu email</mat-label>
+        <input matInput placeholder="pat@example.com" [(ngModel)]="usuario.email" id="email" type="text" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="example">
+      <mat-form-field appearance="fill">
+        <mat-label>Entre com sua senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="usuario.senha">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="example-button-row">
+      <button mat-fab extended color="primary" type="submit" name="action" (click)="fazerLogin()">
+        <mat-icon>favorite</mat-icon>
+        Login
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>
