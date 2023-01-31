@@ -6,7 +6,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 import { AlunoFormComponent } from './aluno-form/aluno-form.component';
@@ -25,7 +24,6 @@ import { AlunosService } from './alunos.service';
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    BrowserAnimationsModule
   ],
   exports: [],
   declarations: [
