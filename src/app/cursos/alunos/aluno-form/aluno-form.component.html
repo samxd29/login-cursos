@@ -1,1 +1,24 @@
-<p>aluno-form works!</p>
+<h1>Criar/Editar aluno</h1>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <div class="container">
+      <div class="row">
+        <mat-form-field appearance="fill">
+          <mat-label class="active">Id</mat-label>
+          <input matInput [(ngModel)]="aluno.id">
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="fill">
+          <mat-label class="active">Nome</mat-label>
+          <input matInput [(ngModel)]="aluno.nome">
+        </mat-form-field>
+      </div>
+      <mat-form-field appearance="fill">
+        <mat-label class="active">Email</mat-label>
+        <input matInput placeholder="pat@example.com" [(ngModel)]="aluno.email" required>
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+
+</mat-grid-list>
