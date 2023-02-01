@@ -1,4 +1,4 @@
-import { EventEmitter, Injectable } from '@angular/core';
+import { EventEmitter, Injectable, Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from './usuario';
 
@@ -14,7 +14,7 @@ export class AuthService {
 
   fazerLogin(usuario: Usuario){
 
-    if(usuario.nome === usuario.nome && usuario.email === usuario.email && usuario.senha === usuario.senha){
+    if(usuario.nome === 'samantha' && usuario.senha === '1234'){
       this.usuarioAutenticado = true;
 
       this.mostrarMenuEmitter.emit(true);
@@ -24,6 +24,7 @@ export class AuthService {
       this.usuarioAutenticado = false;
 
       this.mostrarMenuEmitter.emit(false);
+      confirm('Usuário ou senha errada, por favor tente novamente!');
     }
   }
 

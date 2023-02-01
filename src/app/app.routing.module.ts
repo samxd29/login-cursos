@@ -12,10 +12,12 @@ import { LoginComponent } from './login/login.component';
 const appRoutes: Routes = [
   { path: 'cursos', loadChildren: () => import('./cursos/cursos.module').then(m => m.CursosModule),
     canActivate : [AuthGuard],
-    canActivateChild: [CursosGuard]
+    canActivateChild: [CursosGuard],
+    canLoad: [AuthGuard]
   },
   { path: 'alunos', loadChildren: () => import('./alunos/alunos.module').then(m => m.AlunosModule),
     canActivate : [AuthGuard],
+    canLoad: [AuthGuard]
     //canActivateChild: [AlunosGuard]
     // se for fazer a guarda de rotas no component pai era declarado aqui
   },
