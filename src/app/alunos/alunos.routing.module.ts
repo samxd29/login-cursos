@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CanActivateChild, CanDeactivate, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { AlunosDeactiveGuard } from '../guards/alunos-deactive.guard';
 
 import { AlunosGuard } from '../guards/alunos.guard';
 import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
@@ -15,7 +16,7 @@ const alunosRoutes: any = [
     { path: 'novo', component: AlunoFormComponent},
     { path: ':id', component: AlunoDetalheComponent},
     { path: ':id/editar', component: AlunoFormComponent,
-      CanDeactivate: [AlunoFormComponent]},
+      canDeactivate: [AlunosDeactiveGuard]},
   ]}
 ]
 @NgModule({
