@@ -1,0 +1,10 @@
+img{
+  width: auto;
+  max-width: 900px;
+  min-width: 200px;
+  align-self: center;
+}
+
+mat-card-content{
+  text-align: center;
+}
