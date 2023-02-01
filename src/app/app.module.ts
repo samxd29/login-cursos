@@ -44,7 +44,8 @@ import { LoginComponent } from './login/login.component';
     AuthService,
     AuthGuard,
     CursosGuard,
-    AlunosGuard
+    AlunosGuard,
+
   ],
   bootstrap: [AppComponent]
 })

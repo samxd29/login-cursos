@@ -11,7 +11,7 @@
       <div class="row">
         <mat-form-field appearance="fill">
           <mat-label class="active">Nome</mat-label>
-          <input matInput [(ngModel)]="aluno.nome">
+          <input matInput [(ngModel)]="aluno.nome" (input)="onInput()">
         </mat-form-field>
       </div>
       <mat-form-field appearance="fill">
